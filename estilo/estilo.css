@@ -1,0 +1,861 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+@font-face {
+    font-family: unnaB;
+    src: url(fonts/Unna-Bold.ttf);
+}
+
+
+/* Boot CSS */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 60px 60px;
+}
+
+.clear {
+    clear: both;
+}
+
+.w50 {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+/* Estilo da página */
+
+
+/* seção Header */
+
+.header-dinamico {
+    position: fixed;
+    display: none;
+    top: 0px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 80px;
+    background-color: rgb(254, 80, 0);
+    z-index: 100;
+}
+
+.head .logo h1 {
+    color: white;
+}
+.header-dinamico .logo h1 {
+    color: white;
+    font-size: 32px;
+    margin-top: 22px;
+}
+.header-dinamico ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.header-dinamico ul li {
+    position: relative;
+    top: -23px;
+    color: black;
+    padding: 0 38px 38px 0;
+    font-size: 25px;
+    font-family: unnaB;
+    margin-top: 0;
+    z-index: 101;
+}
+
+header {
+    height: 564px;
+    width: 100%;
+    background-color: rgb(254, 80, 0);
+}
+
+header .head .logo {
+    margin-left: 0px;
+}
+
+header .apresentacao h1 {
+    font-family: unna-bold;
+    z-index: 2;
+    background-color: rgb(254, 80, 0);
+}
+
+header .apresentacao h1 {
+    position: relative;
+    font-size: 100px;
+    top: -40px;
+    line-height: 92px;
+}
+
+header .apresentacao #br-mobile {
+    display: none;
+}
+
+.menu-desktop.clientex {
+    right: -68px !important;
+}
+
+header .menu-desktop ul {
+    margin-top: 0px;
+    list-style-type: none;
+    display: flex;
+    z-index: 101;
+}
+
+header .menu-desktop ul li {
+    position: relative;
+    bottom: 69px;
+    color: whitesmoke;
+    padding: 0 38px 38px 0;
+    font-size: 52px;
+    font-family: unnaB;
+    margin-top: 0;
+}
+
+header .menu-desktop ul li:hover {
+    bottom: 73px;
+    transition: 0.5s;
+}
+
+.head {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 70%;
+}
+
+.head .menu-desktop {
+    display: none;
+}
+
+.head .icone-mobile {
+    display: none;
+}
+
+.head .icone-mobile i {
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+
+/* seção portfólio */
+
+section.portfolio {
+    margin-top: 115px;
+}
+
+section.portfolio h3 {
+    font-size: 52px;
+    margin-bottom: 120px;
+    color: #101101
+}
+
+.banner-portfolio {
+    margin-left: -20%;
+    width: 130%;
+    height: 470px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.banner-portfolio a:hover {
+    cursor: pointer;
+}
+
+.saiba_mais {
+    background-color: rgb(254, 80, 0);
+    width: 0px;
+    height: 100%;
+}
+
+.saiba_mais h1 {
+    color: whitesmoke;
+    position: absolute;
+    margin-left: 28px;
+    font-size: 80px;
+    margin-top: 260px;
+    margin-bottom: 245px;
+    display: none;
+}
+
+.saiba_mais h1:hover {
+    font-size: 82px;
+    transition: 1s;
+}
+
+.banner-portfolio:hover>.saiba_mais {
+    width: 466px;
+    transition: 1s;
+}
+
+.banner-portfolio:hover>.saiba_mais h1 {
+    display: inline;
+}
+
+.mais_projetos {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mais_projetos h2 {
+    font-size: 82px;
+    position: absolute;
+    margin-top: 110px;
+}
+
+.mais_projetos h2:hover {
+    font-size: 85px;
+    transition: 1s;
+}
+
+
+/* seção clientes */
+
+.clientes {
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    height: 550px;
+    background-color: rgb(254, 80, 0);
+    text-align: center;
+}
+
+.clientes .comunicacao {
+    position: absolute;
+    top: 80px;
+    margin-left: 10px;
+}
+
+.clientes .comunicacao h3 {
+    font-size: 52px;
+    line-height: 43px;
+    color: whitesmoke;
+    text-align: justify;
+}
+
+@font-face {
+    font-family: unna;
+    src: url(fonts/Unna-Regular.ttf);
+}
+
+@font-face {
+    font-family: nive;
+    src: url(fonts/NIVEAUGROTESKREGULAR.TTF);
+}
+
+@font-face {
+    font-family: unnaBI;
+    src: url(fonts/Unna-BoldItalic.ttf );
+}
+
+@font-face {
+    font-family: unnaI;
+    src: url(fonts/Unna-Italic.ttf);
+}
+
+.clientes {
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.clientes .comunicacao p {
+    color: whitesmoke;
+    text-align: justify;
+    margin-top: 60px;
+    font-size: 24px;
+    font-family: nive;
+}
+
+.clientes .depoimentos {
+    position: relative;
+    top: 90px;
+    /*right: 65px;
+    width: 420px;*/
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+
+.clientes .depoimentos .foto {
+    position: absolute;
+    top: 81px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: whitesmoke solid 3px;
+}
+
+.clientes .depoimentos h3 {
+    color: whitesmoke;
+    font-family: unnaBI;
+    font-size: 52px;
+    margin-bottom: 0px;
+}
+
+.clientes .depoimentos p {
+    line-height: 25px;
+    font-family: unnaI;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.clientes .depoimentos .rock {
+    width: 100%;
+}
+
+.clientes .depoimentos #rock img {
+    width: 25px;
+    height: 25px;
+}
+
+
+/*  section contato */
+
+.contato {
+    margin-top: 80px;
+}
+
+.contato h3 {
+    font-size: 52px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contato ul {
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+@font-face {
+    font-family: unnaB;
+    src: url(fonts/Unna-Bold.ttf);
+}
+
+.contato ul li {
+    font-size: 100px;
+    width: 100%;
+    font-family: unnaB;
+}
+
+.contato ul #li2 {
+    text-align: right;
+}
+
+.contato ul li:hover {
+    font-size: 102px;
+    transition: 1s;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 110px;
+    background-color: rgb(254, 80, 0);
+    height: 220px;
+    margin-bottom: -800px;
+    overflow-y: hidden;
+}
+
+footer .midias {
+    position: absolute;
+    margin-top: -25px;
+    left: 0%;
+}
+
+footer .midias a img {
+    position: relative;
+    top: 50px;
+    margin-left: -8px;
+    width: 25px;
+    height: 25px;
+    display: inline;
+    cursor: pointer;
+}
+
+footer .logo img {
+    margin-top: 30px;
+    display: block;
+    height: 60px;
+    width: 75px;
+    position: relative;
+    top: 68px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: auto;
+}
+
+footer .logo ul {
+    margin-right: 35px;
+    list-style-type: none;
+    color: whitesmoke;
+    text-align: right;
+    position: relative;
+    top: -30px;
+    cursor: auto;
+}
+
+footer .logo ul li {
+    font-family: unnaB;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+footer .logo {}
+
+
+/* página clientes */
+
+section.projeto {
+    background-color: whitesmoke;
+    margin-top: 110px;
+    width: 100%
+}
+
+.nome_cliente h1 {
+    font-size: 100px;
+    font-family: unnaB;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 12px;
+}
+
+.textinho {
+    position: relative;
+    top: -120px;
+    text-align: right;
+    margin-right: 0.6%;
+}
+
+.textinho p {
+    text-align: right;
+    font-size: 24px;
+    font-family: unnaB;
+}
+
+section.outros_projetos h3 {
+    font-size: 82px;
+}
+
+.projeto .banner-portfolio {
+    cursor: pointer;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fotos {
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    height: 180%;
+    background-color: rgba(80, 80, 80, 0.5);
+    z-index: 7000;
+    display: none;
+}
+
+.fotos i.fas.fa-times {
+    position: absolute;
+    font-size: 30px;
+    color: whitesmoke;
+    margin-left: 82%;
+    margin-top: 92px;
+    cursor: pointer;
+}
+
+.fotos .janela {
+    width: 70%;
+    height: 35%;
+    margin: 120px auto;
+}
+
+.fotos .janela .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nslide {
+    display: none;
+}
+
+.fotos .janela .setas {
+    display: flex;
+    position: relative;
+    top: -53%;
+}
+
+.setas .fas {
+    cursor: pointer;
+    font-size: 45px;
+    color: rgb(20, 18, 18);
+    background-color: rgba(80, 80, 80, 0.5);
+}
+
+.setas .fas.fa-angle-right {
+    margin-left: 90%;
+}
+
+.setas .fas.fas.fa-angle-left {
+    margin-left: 1%;
+}
+
+.outros_projetos {
+    margin-top: 120px;
+    width: 100%;
+}
+
+.outros_projetos .fa.fa-chevron-left,
+.fa.fa-chevron-right {
+    color: white;
+    font-size: 60px;
+    font-weight: 100px;
+    position: relative;
+    top: 140px;
+    z-index: 10;
+    background-color: rgba(80, 80, 80, 0.5);
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    height: 240px;
+    width: 290px;
+    padding: 0;
+    margin: -3px;
+}
+
+.slider img:hover {
+    transform: scale(1.2);
+}
+
+
+/* telas desktop menores 1086px */
+
+@media screen and (max-width: 1086px) {
+    /* header */
+    header .apresentacao h1 {
+        font-size: 60px;
+    }
+    header .menu-desktop ul li {
+        font-size: 40px;
+        bottom: 10px;
+    }
+    header .menu-desktop ul li:hover {
+        bottom: 12px;
+    }
+    /* section portfolio */
+    .clientes .comunicacao h3 {
+        font-size: 34px;
+    }
+    .clientes .comunicacao p {
+        font-size: 22px;
+    }
+    .clientes .depoimentos {
+        right: -30px;
+    }
+    .clientes .depoimentos h3 {
+        color: whitesmoke;
+        font-family: unnaBI;
+        font-size: 31px;
+    }
+    .clientes .depoimentos p {
+        line-height: 25px;
+        font-family: unnaI;
+        font-size: 19.5px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    /* página clientes*/
+    section.outros_projetos h3 {
+        font-size: 52px;
+    }
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 800px) {
+    /* boot mobile */
+    .w50 {
+        width: 100%;
+    }
+    .center {
+        margin: 0 auto;
+    }
+    /* header mobile */
+    header {
+        height: 490px;
+    }
+    .head {
+        background-color: rgb(254, 80, 0);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow-x: hidden;
+        z-index: 5;
+    }
+    .head .menu-desktop {
+        display: none !important;
+    }
+    .head .icone-mobile {
+        position: absolute;
+        display: block;
+        right: 2%;
+        top: 22px;
+    }
+    .head .icone-mobile .fas.fa-bars {
+        color: whitesmoke;
+        font-size: 38px;
+    }
+    .head .icone-mobile .fas.fa-times {
+        color: whitesmoke;
+        font-size: 38px;
+    }
+    header .apresentacao #br-mobile {
+        display: flex;
+    }
+    header .apresentacao h1 {
+        font-size: 55px;
+        line-height: 70px;
+        top: 140px;
+    }
+    header .menu-desktop {
+        display: none;
+    }
+    /* menu-mobile */
+    .menu-mobile {
+        position: fixed;
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
+        z-index: 5000;
+        background-color: rgb(254, 80, 0);
+        display: none;
+    }
+    .menu-mobile ul {
+        list-style-type: none;
+        margin-left: -4%;
+    }
+    .menu-mobile ul li {
+        font-family: unnaB;
+        font-size: 55px;
+        line-height: 100px;
+    }
+    /* seção portfolio mobile */
+    section.portfolio h3 {
+        font-size: 35px;
+        text-align: center;
+        margin-top: -30px;
+        margin-bottom: 100px;
+    }
+    .banner-portfolio {
+        margin-bottom: 0px;
+        background-size: cover;
+    }
+    .banner-portfolio a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+    .saiba_mais {
+        display: none;
+    }
+    .mais_projetos h2 {
+        font-size: 44px;
+    }
+    .mais_projetos h2:hover {
+        font-size: 46px;
+    }
+    /* seçao clientes mobile */
+    .clientes {
+        height: 860px;
+    }
+    .clientes .comunicacao {
+        margin-top: -35px;
+        margin-left: 0%;
+        width: 100%;
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .clientes .comunicacao h3 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .clientes .comunicacao p {
+        text-align: center;
+    }
+    .clientes .depoimentos {
+        margin-top: 380px;
+        width: 100% !important;
+        display: block;
+        margin-left: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .clientes .depoimentos .avaliacao {
+        text-align: justify;
+        width: 240px;
+    }
+    /* seção contato mobile */
+    .contato ul li {
+        font-size: 44px;
+    }
+    .contato ul li:hover {
+        font-size: 46px;
+    }
+    .contato ul #li2 {
+        margin-left: 0;
+        text-align: right;
+    }
+    /* footer mobile */
+    footer .logo ul {
+        text-align: end;
+        margin-right: 0px;
+    }
+    footer .logo ul li {
+        font-size: 15px;
+    }
+    .footer .logo img {
+        height: 25px;
+        width: 45px;
+    }
+    /* página clientes */
+    .nome_cliente {
+        text-align: left;
+        box-sizing: border-box;
+    }
+    .nome_cliente h1 {
+        max-width: 492px;
+        font-size: 50px;
+    }
+    .textinho {
+        top: 0px;
+        margin-bottom: 80px;
+        justify-content: center;
+    }
+    .textinho p {
+        text-align: center;
+        justify-content: center;
+    }
+    .fotos .janela {
+        width: 100%;
+        height: 28%;
+    }
+    .outros_projetos h3 {
+        font-size: 44px;
+    }
+    .outros_projetos {
+        text-align: center;
+    }
+    .outros_projetos .slider img {
+        height: 160px;
+        width: 220px;
+        padding: 0;
+        margin: -3px;
+    }
+    .outros_projetos .fa.fa-chevron-left,
+    .fa.fa-chevron-right {
+        top: 110px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    /* menu-mobile */
+    .menu-mobile ul {
+        margin-left: -6%;
+    }
+    /* portfolio */
+    .banner-portfolio {
+        height: 280px !important;
+    }
+    /*seção depoimentos */
+    section.clientes {
+        height: 960px;
+    }
+    .clientes .depoimentos {
+        width: 100%;
+        right: 0px;
+    }
+    .clientes .depoimentos h3 {
+        font-size: 34px;
+    }
+    .clientes .depoimentos p {
+        font-size: 22px;
+        margin-right: 0px;
+    }
+    /* seção contatos */
+    .contato ul #li2 {
+        margin-right: -20px;
+        text-align: right;
+    }
+    /* página clientes fotos*/
+    .setas .fas.fa-angle-right {
+        margin-left: 87%;
+    }
+    /* Footer */
+    footer .midias {
+        margin-left: -1%;
+    }
+    footer .midias a img {
+        top: 35px;
+    }
+    footer .logo img {
+        top: 50px;
+        height: 35px;
+        width: 40px;
+    }
+}
